@@ -1,0 +1,48 @@
+<project name="ass2" default="all">
+    <target name="all" depends="clean,compile,documentation,test,jar"/>
+    <path id ="junit.classpath">
+        <fileset dir="lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    <target name="compile">
+        <mkdir dir = "target"/>
+        <javac srcdir="src" destdir="target" includeantruntime="true">
+        </javac>
+    </target>
+
+    <target name="test" description="Compile test" >
+        <mkdir dir="testtarget"/>
+        <mkdir dir="testresults"/>
+        <javac srcdir="test" destdir="testtarget" includeantruntime="false">
+            <classpath refid="junit.classpath"/>
+            <classpath location="target"/>
+        </javac>
+        <junitlauncher printsummary="true" failureproperty="junit.failure">
+            <classpath refid="junit.classpath"/>
+            <classpath location="target"/>
+            <classpath location="testtarget"/>
+            <testclasses outputdir="testresults">
+                <fileset dir="testtarget" includes ="**/*.class"/>
+                <listener type="legacy-plain"/>
+            </testclasses>
+        </junitlauncher>
+        <fail if="junit.failure"/>
+    </target>
+    <target name="documentation">
+        <mkdir dir="doc"/>
+        <javadoc sourcepath="src" excludepackagenames="Gui" destdir="doc">
+        </javadoc>
+    </target>
+    <target name="jar" depends="compile, test">
+        <mkdir  dir="artifacts"/>
+        <jar jarfile="artifacts/Gui.jar" basedir="target" manifest="jar-manifest.txt"/>
+    </target>
+    <target name ="clean">
+        <delete dir="target" quiet="true"/>
+        <delete dir="testresults" quiet="true"/>
+        <delete dir="testtarget" quiet="true"/>
+        <delete dir="doc" quiet="true"/>
+        <delete dir="artifacts/Gui.jar"/>
+    </target>
+</project>

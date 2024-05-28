@@ -1,0 +1,8 @@
+Testcase: BackEnd.MazeSolverTests
+Test: MazeSolver() took 0 milli sec(s)
+Test: testgeneratedmaze() took 5 milli sec(s)
+Test: solveSolveableMaze() took 0 milli sec(s)
+Test: solveUnsolveableMaze() took 1 milli sec(s)
+Test: solveWithoutStartMaze() took 0 milli sec(s)
+Test: solveWithoutEndMaze() took 1 milli sec(s)
+Tests run: 6, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 8 milli sec(s)

@@ -1,0 +1,12 @@
+Testcase: BackEnd.MazeGenratorTests
+Test: convertertest() took 0 milli sec(s)
+Test: editedcheck() took 1 milli sec(s)
+Test: imagetest() took 0 milli sec(s)
+Test: convertertest2() took 1 milli sec(s)
+Test: lengthcheck2() took 0 milli sec(s)
+Test: methodexists1() took 0 milli sec(s)
+Test: methodexists2() took 1 milli sec(s)
+Test: editedcheck2() took 0 milli sec(s)
+Test: testGenerator() took 0 milli sec(s)
+Test: lengthcheck() took 1 milli sec(s)
+Tests run: 10, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 5 milli sec(s)

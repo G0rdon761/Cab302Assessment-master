@@ -1,0 +1,10 @@
+Testcase: BackEnd.MazeSolver.DifficultyPercentageTest
+Test: FreeRoamDeadEndPercentage() took 0 milli sec(s)
+Test: DifficultyPercentage() took 1 milli sec(s)
+Test: NumberOfPathTiles() took 0 milli sec(s)
+Test: SolutionPercentage() took 1 milli sec(s)
+Test: DeadEndPercentage() took 1 milli sec(s)
+Test: WithoutSolutionPercentage() took 0 milli sec(s)
+Test: DeadEnd() took 0 milli sec(s)
+Test: NumberOfSolutionTiles() took 0 milli sec(s)
+Tests run: 8, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 4 milli sec(s)

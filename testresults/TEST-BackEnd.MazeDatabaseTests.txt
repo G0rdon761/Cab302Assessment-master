@@ -1,0 +1,13 @@
+Testcase: BackEnd.MazeDatabaseTests
+Test: testGetCreateDate() took 102 milli sec(s)
+Test: testUpdateMaze() took 4 milli sec(s)
+Test: testGetAllMaze() took 12 milli sec(s)
+Test: testGetMaze() took 10 milli sec(s)
+Test: testGetLastModifiedDate() took 4 milli sec(s)
+Test: testInsertMaze() took 4 milli sec(s)
+Test: testMazeDetails() took 5 milli sec(s)
+Test: testGetAuthor() took 3 milli sec(s)
+Test: testDeleteMaze() took 3 milli sec(s)
+Test: testCreateDatabase() took 6 milli sec(s)
+Test: testGetMazeName() took 4 milli sec(s)
+Tests run: 11, Failures: 0, Skipped: 0, Aborted: 0, Time elapsed: 162 milli sec(s)
